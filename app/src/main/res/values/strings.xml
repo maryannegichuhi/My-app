@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Maryanne</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_formactivity">Formactivity</string>
+    <string name="title_activity_scroll">ScrollActivity</string>
+    <string name="title_activity_practical">PracticalActivity</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_activity_lottie_animation">LottieAnimationActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+</resources>
