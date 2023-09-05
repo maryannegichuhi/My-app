@@ -118,7 +118,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //EMAIL
         OutlinedButton(onClick = {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
@@ -141,7 +141,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //CALL
         OutlinedButton(onClick = {
             val callIntent=Intent(Intent.ACTION_DIAL)
             callIntent.data = "tel:0707242922".toUri()
@@ -162,7 +162,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //SHARE
         OutlinedButton(onClick = {
             val shareIntent=Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
@@ -184,7 +184,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //SMS
         OutlinedButton(onClick = {
             val smsIntent=Intent(Intent.ACTION_SENDTO)
             smsIntent.data = "smsto:0707242922".toUri()
@@ -205,7 +205,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //CAMERA
         OutlinedButton(onClick = {
             val cameraIntent=Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             if (cameraIntent.resolveActivity(mContext.packageManager)!=null){
@@ -228,7 +228,7 @@ fun myIntent(){
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        //STK
+        //SETTINGS
         OutlinedButton(onClick = {
             val settingsIntent=Intent(Settings.ACTION_SETTINGS)
             mContext.startActivity(settingsIntent)
@@ -245,6 +245,9 @@ fun myIntent(){
 
 
         }
+        Spacer(modifier = Modifier.height(20.dp))
+
+        //JUMIA
         OutlinedButton(onClick = { mContext.startActivity(Intent(mContext,PracticalActivity::class.java))
         },
             modifier = Modifier
